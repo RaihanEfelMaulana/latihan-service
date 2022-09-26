@@ -47,7 +47,7 @@ public class LatihanServiceApplication {
 
 }
 ```
-Metode hello() yang di tambahkan dirancang untuk mengambil parameter String yang disebut name, dan kemudian menggabungkan parameter ini dengan kata "Hello"dalam kode. Ini berarti bahwa jika Anda menyetel name dengan “Latihan 2” dalam permintaan, responsnya adalah “Hello Latihan 2”.
+Metode hello() yang di tambahkan dirancang untuk mengambil parameter String yang disebut name, dan kemudian menggabungkan parameter ini dengan kata "Hello"dalam kode. Ini berarti bahwa jika Anda menyetel name dengan “Word!!” dalam permintaan, responsnya adalah “Hello Word!!”.
 
 Anotasi @RestController memberi tahu Spring bahwa kode ini menjelaskan titik akhir yang harus tersedia melalui web. @GetMapping(“/hello”) memberi tahu Spring untuk menggunakan method hello() untuk menjawab permintaan yang dikirim ke alamat http://localhost:8080/hello. Akhirnya, @RequestParamSpring memberi tahu Spring untuk mengharapkan nilai name dalam permintaan, tetapi jika tidak ada, itu akan menggunakan kata "Dunia" secara default.
 
@@ -55,5 +55,5 @@ Anotasi @RestController memberi tahu Spring bahwa kode ini menjelaskan titik akh
 Run file LatihanService2Application.java.
 ![image.png](https://drive.google.com/uc?export=view&id=1VkIIwZShP97pUyYNCC7EMw0rvQeU8jVV )
 Beberapa baris terakhir di sini memberi tahu kami bahwa Spring telah dimulai. Server Apache Tomcat tertanam pada Spring Boot bertindak sebagai server web dan mendengarkan permintaan pada localhost port 8010. Buka browser Anda dan di bilah alamat di bagian atas enter http://localhost:8010/halo. Anda harus mendapatkan respons ramah yang bagus seperti ini:
-![image.png](https://drive.google.com/uc?export=view&id=1V9cn-S45QdAVlpiJ19OkxLGacu5hjM8h)
+![image.png](https://drive.google.com/uc?export=view&id=1V9cn-S45QdAVlpiJ19OkxLGacu5hjM8h )
 
