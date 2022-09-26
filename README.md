@@ -18,6 +18,43 @@
 ## Proyek Spring Boot
 **Langkah 1 :** 
 <br>  Menggunakan mulai.spring.io untuk membuat proyek "web". Dalam dialog "Dependenciesn" cari dan tambahkan Dependencies "web" seperti yang ditunjukkan pada tangkapan layar. Tekan tombol "Generate", unduh zip, dan buka kemasannya ke dalam folder di PC.
-**Langkah 1 :**
-<br>Buka proyek di IDE Anda dan cari DemoApplication.javafile di src/main/java/com/example/demofolder. Sekarang ubah isi file dengan menambahkan metode tambahan dan anotasi yang ditunjukkan pada kode di bawah ini. Anda dapat menyalin dan menempelkan kode atau cukup mengetiknya.
+Proyek yang dibuat oleh start.spring.io berisi Spring Boot,framework yang membuat Spring siap bekerja di dalam aplikasi Anda, tetapi tanpa banyak kode atau konfigurasi yang diperlukan. Spring Boot adalah cara tercepat dan terpopuler untuk memulai proyek Spring.
+
+**Langkah 2:**
+Buka proyek di IDE Anda dan cari file LatihanServiceApplication.java di Source Packages pada folder com.raihanefelmaulana.latihanservice. Sekarang ubah isi file dengan menambahkan metode tambahan dan anotasi yang ditunjukkan pada kode di bawah ini. Anda dapat menyalin dan menempelkan kode atau cukup mengetiknya.
+```java
+package com.afifpermana.latihan2service;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+@RestController
+public class Latihan2ServiceApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LatihanServiceApplication.class, args);
+    }
+
+    @GetMapping("/hello")
+    public String hello(@RequestParam(value = "name", defaultValue = "Latihan 2") String name) {
+        return String.format("Hello %s!", name);
+    }
+
+}
+```
+Metode hello() yang di tambahkan dirancang untuk mengambil parameter String yang disebut name, dan kemudian menggabungkan parameter ini dengan kata "Hello"dalam kode. Ini berarti bahwa jika Anda menyetel name dengan “Latihan 2” dalam permintaan, responsnya adalah “Hello Latihan 2”.
+
+Anotasi @RestController memberi tahu Spring bahwa kode ini menjelaskan titik akhir yang harus tersedia melalui web. @GetMapping(“/hello”) memberi tahu Spring untuk menggunakan method hello() untuk menjawab permintaan yang dikirim ke alamat http://localhost:8080/hello. Akhirnya, @RequestParamSpring memberi tahu Spring untuk mengharapkan nilai name dalam permintaan, tetapi jika tidak ada, itu akan menggunakan kata "Dunia" secara default.
+
+**Langkah 4:**
+Run file LatihanService2Application.java.
+
+
+Beberapa baris terakhir di sini memberi tahu kami bahwa Spring telah dimulai. Server Apache Tomcat tertanam pada Spring Boot bertindak sebagai server web dan mendengarkan permintaan pada localhost port 8010. Buka browser Anda dan di bilah alamat di bagian atas enter http://localhost:8010/halo. Anda harus mendapatkan respons ramah yang bagus seperti ini:
+
+
 
