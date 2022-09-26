@@ -9,7 +9,7 @@
 <br>**Langkah 5  :** <br>Tambahkan description untuk project yang akan kita buat
 <br>**Langkah 6  :**<br>Pilih 17 pada bagian java, pastikan sesuai dengan jdk yang ada di pc/laptop.
 <br>**Langkah 7  :** <br>Tambahkan dependensi yaitu Spring Web
-![image.png](https://drive.google.com/uc?export=view&id=1VkIIwZShP97pUyYNCC7EMw0rvQeU8jVV )
+![image.png](https://drive.google.com/uc?export=view&id=1KWmreT8Eg7OfjCieYgQ7rTlJL0zg4ZnH)
 <br>**Langkah 8  :** <br>Klik tombol Generate the project . File zip akan diunduh, ekstrak ke dalam hard disk.
 <br>**Langkah 9  :**<br> Jalankan netbins lalu impor proyek pakar yang dibuat. Butuh beberapa waktu untuk mengunduh file yang diperlukan.
 <br>**Langkah 10 :** <br>Lalu build and dependencies pada project yang sudah kita import
@@ -52,9 +52,7 @@ Anotasi @RestController memberi tahu Spring bahwa kode ini menjelaskan titik akh
 
 **Langkah 4:**
 Run file LatihanService2Application.java.
-
-
+![image.png](https://drive.google.com/uc?export=view&id=1VkIIwZShP97pUyYNCC7EMw0rvQeU8jVV )
 Beberapa baris terakhir di sini memberi tahu kami bahwa Spring telah dimulai. Server Apache Tomcat tertanam pada Spring Boot bertindak sebagai server web dan mendengarkan permintaan pada localhost port 8010. Buka browser Anda dan di bilah alamat di bagian atas enter http://localhost:8010/halo. Anda harus mendapatkan respons ramah yang bagus seperti ini:
-
-
+![image.png](https://drive.google.com/uc?export=view&id=1V9cn-S45QdAVlpiJ19OkxLGacu5hjM8h)
 
